@@ -22,7 +22,7 @@ namespace NumKeyBoardDecimalPoint
 
             if (Device.RuntimePlatform == Device.Android)
             {
-                dataForm.RegisterEditor("NumericTextBox", new CustomEntryEditor(dataForm));
+                dataForm.RegisterEditor("NumericTextBox", new CustomNumericTextEditor(dataForm));
                 dataForm.RegisterEditor("Salary", "NumericTextBox");
             }
             else
@@ -39,20 +39,20 @@ namespace NumKeyBoardDecimalPoint
         public decimal Salary { get; set; }
     }
 
-    public class CustomEntryEditor : DataFormEditor<CustomEntry>
+    public class CustomNumericTextEditor : DataFormEditor<CustomNumericTextBox>
     {
-        public CustomEntryEditor(SfDataForm dataForm) : base(dataForm)
+        public CustomNumericTextEditor(SfDataForm dataForm) : base(dataForm)
         {
 
         }
-        protected override CustomEntry OnCreateEditorView(DataFormItem dataFormItem)
+        protected override CustomNumericTextBox OnCreateEditorView(DataFormItem dataFormItem)
         {
-            return new CustomEntry();
+            return new CustomNumericTextBox();
         }
 
     }
 
-    public class CustomEntry : SfNumericTextBox
+    public class CustomNumericTextBox : SfNumericTextBox
     {
 
     }
