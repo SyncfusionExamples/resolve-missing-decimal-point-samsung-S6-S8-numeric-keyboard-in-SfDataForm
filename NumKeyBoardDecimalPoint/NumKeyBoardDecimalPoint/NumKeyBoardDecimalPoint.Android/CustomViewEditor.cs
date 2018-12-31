@@ -16,7 +16,7 @@ using Syncfusion.SfNumericTextBox.XForms.Droid;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
-[assembly: ExportRenderer(typeof(CustomEntry), typeof(CustomViewEditor))]
+[assembly: ExportRenderer(typeof(CustomNumericTextBox), typeof(CustomViewEditor))]
 namespace NumKeyBoardDecimalPoint.Droid
 {
     public class CustomViewEditor : SfNumericTextBoxRenderer
