@@ -1,4 +1,4 @@
-# How to resolve missing decimal point issue on Samsung Devices(S6,S8) numeric keyboard in DataForm
+# How to resolve missing decimal point issue on Samsung devices S6 S8 Numeric keyboard in SfDataform?
 
 This example demonstrates how to resolve missing decimal point issue on Samsung Devices (S6, S8) numeric keyboard in DataForm.
 
